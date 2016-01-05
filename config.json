@@ -1,6 +1,7 @@
 {
 	"host": ":8080",
-	"name": "example-blog",
+	"title": "example-blog",
+	"subtitle": "an awesome demo",
 	"country": "Open Source Land",
 	"author": "User"
 }
