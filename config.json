@@ -3,5 +3,7 @@
 	"title": "example-blog",
 	"subtitle": "an awesome demo",
 	"country": "Open Source Land",
-	"author": "User"
+	"author": "User",
+	"email": "user@example-blog.com",
+	"url": "http://localhost"
 }

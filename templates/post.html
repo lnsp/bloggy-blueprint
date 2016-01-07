@@ -1,7 +1,45 @@
-<div class="container">
-	<h1>{{.PostTitle}} <small>{{.PostSubtitle}}</small></h1>
-	<div class="container-fluid">{{.PostContent}}</div>
-	<div class="container-fluid">
-		<p class="text-muted">Published on {{.PostDate}}</p>
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{.PostTitle}} - {{.BlogTitle}}</title>
+	<!-- Bootstrap3 base -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Bootstrap3 theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- jQuery 2.1.4 abse -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- Bootstrap3 js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<a href="{{.BlogUrl}}">
+				<h1>{{.BlogTitle}}</h1>
+			</a>
+			<p class="text-muted">{{.BlogSubtitle}}</p>
+		</header>
 	</div>
-</div>
+	<div class="container">
+		<main>
+			<h1>{{.PostTitle}}
+				<small>{{.PostSubtitle}}</small>
+			</h1>
+			<div class="container-fluid">{{.PostContent}}</div>
+			<div class="container-fluid">
+				<p class="text-muted">Published on {{.PostDate}}</p>
+			</div>
+		</main>
+	</div>
+	<div class="container">
+		<footer>&copy; {{.BlogYear}} {{.BlogAuthor}} | <a href="mailto:{{.BlogEmail}}">contact</a></footer>
+	</div>
+</body>
+
+</html>
