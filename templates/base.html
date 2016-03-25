@@ -5,37 +5,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="theme-color" content="#0275d8">
 	<title>
-		{{ template "title" }}
+		{{ template "title" .}}
 	</title>
-	<!-- Bootstrap4 base -->
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
 
-	<!-- jQuery 2.1.4 abse -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-	<!-- Bootstrap3 js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
 
 	<style>
 		.footer {
 			position: absolute;
+			bottom: 0;
 			height: 70px;
-			bottom: 0px;
 			width: 100%;
 		}
+
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+
 		body {
 			margin-bottom: 70px;
-			min-height: 100%;
 		}
 	</style>
 </head>
 
 <body>
-	<nav class="navbar bg-primary navbar-fixed-top navbar-full navbar-dark">
+	<nav class="navbar bg-primary navbar-static-top navbar-full navbar-dark">
 		<div class="container">
 			<a class="navbar-brand" href="{{.BlogURL}}">{{.BlogTitle}}</a>
-			<div class="pull-xs-right">{{.BlogSubtitle}}</div>
+			<div class="nav navbar-nav pull-xs-right hidden-sm-down">
+				<div class="nav-item nav-link">{{.BlogSubtitle}}</div>
+			</div>
 		</div>
 	</nav>
 	{{ template "content" .}}
@@ -46,6 +52,5 @@
 		</div>
 	</footer>
 </body>
-
 </html>
 {{ end }}

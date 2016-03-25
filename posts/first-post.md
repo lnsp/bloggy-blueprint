@@ -5,4 +5,4 @@ date: 2015-Dec-31
 ---
 ## Hello World from Open Source Land!
 
-It is wonderful in here :)
+It is wonderful in here!

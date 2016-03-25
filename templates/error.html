@@ -1,0 +1,11 @@
+{{ define "title"}}
+Error - {{.BlogTitle}}
+{{ end }}
+{{ define "content"}}
+<div class="jumbotron jumbotron-fluid bg-primary text-xs-center">
+    <div class="container">
+        <div class="display-2">Error!</div>
+        <p class="lead">{{.Message}}</p>
+    </div>
+</div>
+{{ end }}

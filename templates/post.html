@@ -1,17 +1,16 @@
 {{ define "title" }}
-{{.PostTitle}} - {{.BlogTitle}}
+	{{.PostTitle}} - {{.BlogTitle}}
 {{ end }}
-
 {{ define "content" }}
 <div class="jumbotron jumbotron-fluid bg-primary">
-	<div class="container">
-		<h1 class="display-3">{{.PostTitle}}</h1>
+	<div class="container text-xs-center">
+		<h1 class="display-5">{{.PostTitle}}</h1>
 		<p class="lead">{{.PostSubtitle}}</p>
 	</div>
 </div>
 <div class="container">
 	<div>{{.PostContent}}</div>
 	<hr>
-	<p class="text-muted">Published on {{.PostDate}}</p>
+	<p class="text-muted">Published {{.PostDate}}</p>
 </div>
 {{ end }}
