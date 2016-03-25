@@ -1,4 +1,3 @@
-<div class="container-fluid">
-	<h3>{{.PostTitle}} <small>{{.PostSubtitle}}</h3>
-	<p class="text-muted">{{.PostSummary}}</p>
-</div>
+{{ define "entry" }}
+<h3>{{.Title}} <small class="text-muted">{{.Subtitle}}</small></h3>
+{{ end }}
