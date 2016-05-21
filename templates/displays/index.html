@@ -6,10 +6,16 @@
 	</div>
 </div>
 <div class="container">
-	{{range .ListOfContents }}
+	{{range .LatestPosts }}
 	<div class="card">
 		<div class="card-block">
-			{{template "entry" .}}
+			<a href="{{.GetURL }}">
+				<h3>
+					{{.Title}}
+					<small class="text-muted hidden-sm-down">{{.Subtitle}}</small>
+				</h3>
+				<p class="text-muted hidden-sm-up">{{.Subtitle}}</p>
+			</a>
 		</div>
 	</div>
 	{{end}}
