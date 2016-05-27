@@ -1,2 +1,2 @@
-# example-blog
-Example blog for the go-blog project.
+# bloggy-blueprint
+Example blog for the [bloggy](https://github.com/lnsp/bloggy) project.
