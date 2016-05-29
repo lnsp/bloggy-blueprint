@@ -1,5 +1,5 @@
 ---
-title: About
+title: about
 ---
 
 ## A custom page featuring information about Bloggy.
