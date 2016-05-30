@@ -1,0 +1,11 @@
+server:
+  port: 8080
+meta:
+  title: My Example Blog
+  subtitle: just an awesome demo!
+  country: Open Source Land
+author:
+  name: The Average User
+  email: user@example-blog.com
+links:
+  github: https://github.com/lnsp/bloggy
